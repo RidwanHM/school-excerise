@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+header {
+  width: 100%;
+  min-height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.img-container {
+  min-width: 250px;
+  max-width: 800px;
+  width: 100%;
+  background: #434343;
+  min-height: 400px;
+}
+
+section {
+  border-top: 1px solid goldenrod;
+  padding-top: clamp(8px, 2vh, 15px);
+  padding-bottom: clamp(16px, 2.5vh, 18px);
+}
+
+.gundam {
+  max-width: 1080px;
+  width: 100%;
+  border-radius: 50px;
+  margin: 10px 20px;
+}
+
+.bg {
+  background-image: url("/images/header-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+}
+
+.step2 {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 35, 36, 0) 26%,
+    rgba(9, 121, 121, 1) 35%,
+    rgba(5, 209, 198, 1) 64%,
+    rgba(0, 212, 255, 1) 96%
+  );
+}
+
+html {
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(6, 5, 1, 1) 76%
+  );
+}
+p::before {
+  font-family: "font awesome 5 free";
+  font-weight: 900;
+  content: "\f00d";
+}
